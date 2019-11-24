@@ -1,6 +1,0 @@
-23:34:34.876 [main] INFO  resources.Base - Titles of open tabs are as expected
-23:47:17.078 [main] INFO  resources.Base - Test name: regionsNavigation
-23:47:21.411 [main] INFO  resources.Base - Successfully open the link for: Middle East Schedule
-23:47:23.201 [main] INFO  resources.Base - Successfully present schedule for 3. day after today and navigate back to today's schedule
-23:54:53.393 [main] INFO  resources.Base - Test name: todaySchedule
-23:54:53.487 [main] INFO  resources.Base - 'TODAY' is presented correct

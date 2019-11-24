@@ -1,0 +1,2 @@
+23:32:19.817 [main] INFO  resources.Base - Test name: windSpeedList
+23:32:27.100 [main] INFO  resources.Base - Wind speed is calculated from Kilometres to Miles per hour correct

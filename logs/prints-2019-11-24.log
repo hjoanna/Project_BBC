@@ -1,6 +1,6 @@
-00:36:58.126 [main] INFO  resources.Base - Test name: windSpeedList
-21:30:16.697 [main] INFO  resources.Base - Test name: mainMenuTabs
-21:31:11.467 [main] INFO  resources.Base - Number of open links in new tabs is the same as number of links in main menu
-21:31:11.467 [main] INFO  resources.Base - Titles of open tabs are as expected
-21:33:12.029 [main] INFO  resources.Base - Test name: mainMenuTabs
-21:34:11.901 [main] INFO  resources.Base - Number of open links in new tabs is the same as number of links in main menu
+23:31:33.660 [main] INFO  resources.Base - All language names are the same as expected
+23:31:46.211 [main] INFO  resources.Base - The language which is clicked on the pop up list is selected
+23:31:55.629 [main] INFO  resources.Base - Test name: temperatureList
+23:32:11.366 [main] INFO  resources.Base - Test name: tempWindDefault
+23:32:11.474 [main] INFO  resources.Base - Selected by default temperature is Celsius
+23:32:11.508 [main] INFO  resources.Base - Selected by default wind speed are Miles per hour

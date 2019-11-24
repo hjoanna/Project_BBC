@@ -29,18 +29,18 @@ public class Base {
 	public WebDriver initializeDriver() throws IOException {
 		
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("C:\\Users\\hrycijoa\\workspace\\Project_BBC_TestNG\\src\\main\\java\\resources\\data.properties");
+		FileInputStream fis = new FileInputStream("src/main/java/resources/data.properties");
 		
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
 		if (browserName.equals("Chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\hrycijoa\\Desktop\\chromedriver_win32\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "src/main/java/resources/chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equals("Firefox")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\hrycijoa\\Desktop\\firefoxdriver_win32\\firefoxdriver.exe");
+			System.setProperty("webdriver.gecko.driver", "src/main/java/resources/geckodriver.exe");
 			driver = new FirefoxDriver();
 		} else if (browserName.equals("InternetExplorer")){
-			System.setProperty("webdriver.ie.driver", "C:\\Users\\hrycijoa\\Desktop\\internetexplorerdriver_win32\\internetexplorerdriver.exe");
+			System.setProperty("webdriver.ie.driver", "src/main/java/resources/IEDriverServer.exe");
 			driver = new InternetExplorerDriver();
 		}
 		
@@ -66,7 +66,7 @@ public class Base {
 
 	public void getScreenshot(String result) throws IOException{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("C://test//"+result+"Screenshot.png"));
+		FileUtils.copyFile(src, new File("src/test/screenshot"+result+"Screenshot.png"));
 	}
 
 	

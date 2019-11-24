@@ -53,7 +53,7 @@ public class Weather_Settings_Wind extends Base{
 		
 		//Step 1: Type any city name and search 
 		wr.getSearchCity().sendKeys(cityName);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		wr.getSearchCity().sendKeys(Keys.ARROW_DOWN, Keys.ENTER);
 		
 		// Step 2: Next to 'Wind speed' click on Miles per hour and from the list select Kilometres - check if wind speed is calculated from Miles per hour to Kilometres correctly

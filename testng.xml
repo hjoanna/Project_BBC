@@ -5,7 +5,7 @@
 	<listener class-name="practice.Listeners"/>
 	<listener class-name="resources.ExtentReporterNG"/>
 </listeners>
-<test name="HomePage_TopMenu_NewWindows">
+ <test name="HomePage_TopMenu_NewWindows">
          <parameter name="tabName1" value="BBC Sounds - Music. Radio. Podcasts"/>
       	 <parameter name="tabName2" value="BBC - Homepage"/>
       	 <parameter name="tabName3" value="BBC Weather"/>
@@ -38,7 +38,7 @@
     <classes>      
       <class name="practice.TV_Schedule_tomorrow"/>
     </classes>
-  </test> 
+  </test>
  <test name="Weather_Settings_Language">
   	<parameter name="langName1" value="English"/>
   	<parameter name="langName2" value="Gaeilge"/>
@@ -47,7 +47,7 @@
     <classes>
       <class name="practice.Weather_Settings_Language"/>
     </classes>
-  </test>
+  </test> 
   <test name="Weather_Settings_Temperature">
    	<parameter name="cityName" value="new york"/>
     <classes>

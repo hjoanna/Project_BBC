@@ -55,9 +55,8 @@ public class Weather_Settings_Temperature extends Base{
 		
 		//Step 1: Type any city name and search 
 		wr.getSearchCity().sendKeys(cityName);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		wr.getSearchCity().sendKeys(Keys.ARROW_DOWN, Keys.ENTER);
-		
 		//Step 2: Next to 'Temperature' click on Celsius and from the list select Fahrenheit - check if temperature is calculated from Celsius to Fahrenheit correct
 		
 		//get temperature in Celsius
