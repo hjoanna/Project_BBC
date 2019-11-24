@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="practice.Listeners"/>
+	<listener class-name="resources.ExtentReporterNG"/>
+</listeners>
+<test name="HomePage_TopMenu_NewWindows">
+         <parameter name="tabName1" value="BBC Sounds - Music. Radio. Podcasts"/>
+      	 <parameter name="tabName2" value="BBC - Homepage"/>
+      	 <parameter name="tabName3" value="BBC Weather"/>
+      	 <parameter name="tabName4" value="BBC WORLD NEWS North America - Schedules"/>
+      	 <parameter name="tabName5" value="BBC - Culture - Music"/>
+      	 <parameter name="tabName6" value="Home - BBC News"/>
+      	 <parameter name="tabName7" value="BBC - Culture - Home"/>
+      	 <parameter name="tabName8" value="Home - BBC Future"/>
+      	 <parameter name="tabName9" value="BBC - Travel - Home"/>
+      	 <parameter name="tabName10" value="Home - BBC Worklife"/>
+      	 <parameter name="tabName11" value="Home - BBC Reel"/>
+      	 <parameter name="tabName12" value="Home - BBC Sport"/>
+    <classes>
+      <class name="practice.HomePage_TopMenu_NewWindows"/>
+    </classes>
+ </test> 
+ <test name="TV_Schedule_regionAnotherDay">
+ 	<parameter name="indexRegion" value="5"/>
+ 	<parameter name="indexDay" value="3"/>
+    <classes>
+      <class name="practice.TV_Schedule_regionAnotherDay"/>
+    </classes>
+  </test> 
+   <test name="TV_Schedule_today">
+    <classes>
+      <class name="practice.TV_Schedule_today"/>
+    </classes>
+  </test> 
+ <test name="TV_Schedule_tomorrow">
+    <classes>      
+      <class name="practice.TV_Schedule_tomorrow"/>
+    </classes>
+  </test> 
+ <test name="Weather_Settings_Language">
+  	<parameter name="langName1" value="English"/>
+  	<parameter name="langName2" value="Gaeilge"/>
+  	<parameter name="langName3" value="G*idhlig"/>
+  	<parameter name="langName4" value="Cymraeg"/>
+    <classes>
+      <class name="practice.Weather_Settings_Language"/>
+    </classes>
+  </test>
+  <test name="Weather_Settings_Temperature">
+   	<parameter name="cityName" value="new york"/>
+    <classes>
+      <class name="practice.Weather_Settings_Temperature"/>
+    </classes>
+  </test>  
+  <test name="Weather_Settings_TemperatureWind">
+    <classes>
+      <class name="practice.Weather_Settings_TemperatureWind"/>
+    </classes>
+  </test> 
+ <test name="Weather_Settings_Wind">
+  	<parameter name="cityName" value="new york"/>
+    <classes>
+      <class name="practice.Weather_Settings_Wind"/>
+    </classes>
+  </test>
+</suite> 

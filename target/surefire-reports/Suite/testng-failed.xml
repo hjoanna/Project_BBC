@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <parameter name="tabName8" value="Home - BBC Future"/>
+  <parameter name="indexRegion" value="5"/>
+  <parameter name="langName3" value="G*idhlig"/>
+  <parameter name="tabName9" value="BBC - Travel - Home"/>
+  <parameter name="langName4" value="Cymraeg"/>
+  <parameter name="langName1" value="English"/>
+  <parameter name="langName2" value="Gaeilge"/>
+  <parameter name="tabName10" value="Home - BBC Worklife"/>
+  <parameter name="tabName1" value="BBC Sounds - Music. Radio. Podcasts"/>
+  <parameter name="tabName2" value="BBC - Homepage"/>
+  <parameter name="tabName3" value="BBC Weather"/>
+  <parameter name="tabName4" value="BBC WORLD NEWS North America - Schedules"/>
+  <parameter name="tabName5" value="BBC - Culture - Music"/>
+  <parameter name="tabName6" value="Home - BBC News"/>
+  <parameter name="tabName7" value="BBC - Culture - Home"/>
+  <parameter name="cityName" value="new york"/>
+  <parameter name="tabName11" value="Home - BBC Reel"/>
+  <parameter name="tabName12" value="Home - BBC Sport"/>
+  <parameter name="indexDay" value="3"/>
+  <listeners>
+    <listener class-name="practice.Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test name="HomePage_TopMenu_NewWindows">
+    <parameter name="tabName8" value="Home - BBC Future"/>
+    <parameter name="tabName9" value="BBC - Travel - Home"/>
+    <parameter name="tabName10" value="Home - BBC Worklife"/>
+    <parameter name="tabName1" value="BBC Sounds - Music. Radio. Podcasts"/>
+    <parameter name="tabName2" value="BBC - Homepage"/>
+    <parameter name="tabName11" value="Home - BBC Reel"/>
+    <parameter name="tabName3" value="BBC Weather"/>
+    <parameter name="tabName12" value="Home - BBC Sport"/>
+    <parameter name="tabName4" value="BBC WORLD NEWS North America - Schedules"/>
+    <parameter name="tabName5" value="BBC - Culture - Music"/>
+    <parameter name="tabName6" value="Home - BBC News"/>
+    <parameter name="tabName7" value="BBC - Culture - Home"/>
+    <classes>
+      <class name="practice.HomePage_TopMenu_NewWindows"/>
+    </classes>
+  </test> <!-- HomePage_TopMenu_NewWindows -->
+  <test name="TV_Schedule_regionAnotherDay">
+    <parameter name="indexRegion" value="5"/>
+    <parameter name="indexDay" value="3"/>
+    <classes>
+      <class name="practice.TV_Schedule_regionAnotherDay"/>
+    </classes>
+  </test> <!-- TV_Schedule_regionAnotherDay -->
+  <test name="TV_Schedule_today">
+    <classes>
+      <class name="practice.TV_Schedule_today"/>
+    </classes>
+  </test> <!-- TV_Schedule_today -->
+  <test name="TV_Schedule_tomorrow">
+    <classes>
+      <class name="practice.TV_Schedule_tomorrow"/>
+    </classes>
+  </test> <!-- TV_Schedule_tomorrow -->
+  <test name="Weather_Settings_Language">
+    <parameter name="langName3" value="G*idhlig"/>
+    <parameter name="langName4" value="Cymraeg"/>
+    <parameter name="langName1" value="English"/>
+    <parameter name="langName2" value="Gaeilge"/>
+    <classes>
+      <class name="practice.Weather_Settings_Language"/>
+    </classes>
+  </test> <!-- Weather_Settings_Language -->
+  <test name="Weather_Settings_Temperature">
+    <parameter name="cityName" value="new york"/>
+    <classes>
+      <class name="practice.Weather_Settings_Temperature"/>
+    </classes>
+  </test> <!-- Weather_Settings_Temperature -->
+  <test name="Weather_Settings_TemperatureWind">
+    <classes>
+      <class name="practice.Weather_Settings_TemperatureWind"/>
+    </classes>
+  </test> <!-- Weather_Settings_TemperatureWind -->
+  <test name="Weather_Settings_Wind">
+    <parameter name="cityName" value="new york"/>
+    <classes>
+      <class name="practice.Weather_Settings_Wind"/>
+    </classes>
+  </test> <!-- Weather_Settings_Wind -->
+  <test name="Weather_Settings_Temperature(failed)">
+    <parameter name="cityName" value="new york"/>
+    <classes>
+      <class name="practice.Weather_Settings_Language">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="nameBefore"/>
+        </methods>
+      </class> <!-- practice.Weather_Settings_Language -->
+      <class name="practice.HomePage_TopMenu_NewWindows">
+        <methods>
+          <include name="initialize"/>
+          <include name="nameBefore"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- practice.HomePage_TopMenu_NewWindows -->
+      <class name="practice.TV_Schedule_tomorrow">
+        <methods>
+          <include name="teardown"/>
+          <include name="nameBefore"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- practice.TV_Schedule_tomorrow -->
+      <class name="practice.Weather_Settings_Temperature">
+        <methods>
+          <include name="temperatureList" invocation-numbers="0"/>
+          <include name="initialize"/>
+          <include name="nameBefore"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- practice.Weather_Settings_Temperature -->
+      <class name="practice.Weather_Settings_Wind">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="nameBefore"/>
+        </methods>
+      </class> <!-- practice.Weather_Settings_Wind -->
+      <class name="practice.Weather_Settings_TemperatureWind">
+        <methods>
+          <include name="initialize"/>
+          <include name="nameBefore"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- practice.Weather_Settings_TemperatureWind -->
+      <class name="practice.TV_Schedule_regionAnotherDay">
+        <methods>
+          <include name="initialize"/>
+          <include name="nameBefore"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- practice.TV_Schedule_regionAnotherDay -->
+      <class name="practice.TV_Schedule_today">
+        <methods>
+          <include name="nameBefore"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- practice.TV_Schedule_today -->
+    </classes>
+  </test> <!-- Weather_Settings_Temperature(failed) -->
+</suite> <!-- Failed suite [Suite] -->

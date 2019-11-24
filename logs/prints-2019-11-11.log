@@ -1,0 +1,6 @@
+21:09:37.341 [main] INFO  resources.Base - Section which is now as 'TODAY' after 'Tomorrow' was clicked - has next day date
+21:09:44.669 [main] INFO  resources.Base - Test name: languageList
+21:09:44.712 [main] INFO  resources.Base - Selected by default language is English
+21:09:45.892 [main] INFO  resources.Base - All language names are the same as expected
+21:10:09.801 [main] INFO  resources.Base - The language which is clicked on the pop up list is selected
+21:10:18.749 [main] INFO  resources.Base - Test name: temperatureList

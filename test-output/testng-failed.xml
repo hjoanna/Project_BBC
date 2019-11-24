@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="practice.Listeners"/>
+    <listener class-name="resources.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="TV_Schedule_today(failed)">
+    <classes>
+      <class name="practice.TV_Schedule_today">
+        <methods>
+          <include name="nameBefore"/>
+          <include name="initialize"/>
+          <include name="teardown"/>
+          <include name="todaySchedule"/>
+        </methods>
+      </class> <!-- practice.TV_Schedule_today -->
+    </classes>
+  </test> <!-- TV_Schedule_today(failed) -->
+  <test thread-count="5" name="Weather_Settings_Language(failed)">
+    <parameter name="langName3" value="G*idhlig"/>
+    <parameter name="langName4" value="Cymraeg"/>
+    <parameter name="langName1" value="English"/>
+    <parameter name="langName2" value="Gaeilge"/>
+    <classes>
+      <class name="practice.Weather_Settings_Language">
+        <methods>
+          <include name="teardown"/>
+          <include name="languageList" invocation-numbers="0"/>
+          <include name="initialize"/>
+          <include name="nameBefore"/>
+        </methods>
+      </class> <!-- practice.Weather_Settings_Language -->
+    </classes>
+  </test> <!-- Weather_Settings_Language(failed) -->
+  <test thread-count="5" name="Weather_Settings_Wind(failed)">
+    <parameter name="cityName" value="new york"/>
+    <classes>
+      <class name="practice.Weather_Settings_Wind">
+        <methods>
+          <include name="teardown"/>
+          <include name="initialize"/>
+          <include name="nameBefore"/>
+          <include name="windSpeedList" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- practice.Weather_Settings_Wind -->
+    </classes>
+  </test> <!-- Weather_Settings_Wind(failed) -->
+</suite> <!-- Failed suite [Suite] -->

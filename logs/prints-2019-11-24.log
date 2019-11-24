@@ -1,0 +1,6 @@
+00:36:58.126 [main] INFO  resources.Base - Test name: windSpeedList
+21:30:16.697 [main] INFO  resources.Base - Test name: mainMenuTabs
+21:31:11.467 [main] INFO  resources.Base - Number of open links in new tabs is the same as number of links in main menu
+21:31:11.467 [main] INFO  resources.Base - Titles of open tabs are as expected
+21:33:12.029 [main] INFO  resources.Base - Test name: mainMenuTabs
+21:34:11.901 [main] INFO  resources.Base - Number of open links in new tabs is the same as number of links in main menu
