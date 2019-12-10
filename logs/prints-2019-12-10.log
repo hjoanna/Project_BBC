@@ -1,0 +1,7 @@
+12:38:03.741 [main] INFO  resources.Base - Test name: windSpeedList
+12:38:15.346 [main] INFO  resources.Base - Wind speed is calculated from Kilometres to Miles per hour correct
+12:38:23.477 [main] INFO  resources.Base - Test name: todaySchedule
+12:38:23.538 [main] INFO  resources.Base - 'TODAY' is presented correct
+12:38:23.578 [main] INFO  resources.Base - The date presented is the same as current date
+12:38:30.634 [main] INFO  resources.Base - Test name: tomorrowLink
+12:38:34.715 [main] INFO  resources.Base - Section which is now as 'TODAY' after 'Tomorrow' was clicked - has next day date

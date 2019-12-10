@@ -50,9 +50,11 @@ public class TV_Schedule_tomorrow extends Base {
 		
 		//Step 1: Scroll page till 'Tomorrow' link is visible and click on it 
 		WebElement tomorrow = tv.getTomorrowLink();
-		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", tomorrow);
+		((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", tomorrow);	
 		Thread.sleep(1000);
-		tomorrow.click();		
+		tv.getTomorrowLink().click();
+
+
 		
 		//Step 2: Check if section which is now as 'TODAY' has next day date
 		String actTomorrow = tv.getTodayDateName().getText();

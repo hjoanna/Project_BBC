@@ -1,2 +1,5 @@
-23:32:19.817 [main] INFO  resources.Base - Test name: windSpeedList
-23:32:27.100 [main] INFO  resources.Base - Wind speed is calculated from Kilometres to Miles per hour correct
+12:38:47.332 [main] INFO  resources.Base - Test name: temperatureList
+12:38:58.792 [main] INFO  resources.Base - Temperature is calculated from Celsius to Fahrenheit correct
+12:39:11.503 [main] INFO  resources.Base - Test name: tempWindDefault
+12:39:11.863 [main] INFO  resources.Base - Selected by default temperature is Celsius
+12:39:11.984 [main] INFO  resources.Base - Selected by default wind speed are Miles per hour

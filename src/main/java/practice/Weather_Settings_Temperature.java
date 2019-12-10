@@ -3,8 +3,10 @@ package practice;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -55,8 +57,11 @@ public class Weather_Settings_Temperature extends Base{
 		
 		//Step 1: Type any city name and search 
 		wr.getSearchCity().sendKeys(cityName);
-		Thread.sleep(2000);
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@class = 'ls-c-auto_complete ls-c-locations-list'] / ul / li[1]"))));
 		wr.getSearchCity().sendKeys(Keys.ARROW_DOWN, Keys.ENTER);
+
+		
 		//Step 2: Next to 'Temperature' click on Celsius and from the list select Fahrenheit - check if temperature is calculated from Celsius to Fahrenheit correct
 		
 		//get temperature in Celsius

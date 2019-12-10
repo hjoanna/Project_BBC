@@ -1,0 +1,7 @@
+12:18:11.351 [main] INFO  resources.Base - Test name: regionsNavigation
+12:18:18.159 [main] INFO  resources.Base - Test name: todaySchedule
+12:18:18.213 [main] INFO  resources.Base - 'TODAY' is presented correct
+12:18:18.252 [main] INFO  resources.Base - The date presented is the same as current date
+12:18:24.228 [main] INFO  resources.Base - Test name: tomorrowLink
+12:18:27.515 [main] INFO  resources.Base - Section which is now as 'TODAY' after 'Tomorrow' was clicked - has next day date
+12:18:38.237 [main] INFO  resources.Base - Test name: languageList

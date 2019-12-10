@@ -1,0 +1,7 @@
+00:24:59.260 [main] INFO  resources.Base - Test name: languageList
+00:24:59.322 [main] INFO  resources.Base - Selected by default language is English
+00:24:59.568 [main] INFO  resources.Base - All language names are the same as expected
+00:25:18.504 [main] INFO  resources.Base - The language which is clicked on the pop up list is selected
+00:25:26.408 [main] INFO  resources.Base - Test name: temperatureList
+00:25:40.532 [main] INFO  resources.Base - Test name: tempWindDefault
+00:25:40.635 [main] INFO  resources.Base - Selected by default temperature is Celsius

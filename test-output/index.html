@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="practice.Weather_Settings_Temperature" hash-for-method="temperatureList(new york)">temperatureList(new york)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -126,12 +112,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="practice.TV_Schedule_regionAnotherDay" hash-for-method="regionsNavigation(5, 3)">regionsNavigation(5, 3)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="practice.TV_Schedule_regionAnotherDay" hash-for-method="regionsNavigation(2, 4)">regionsNavigation(2, 4)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="practice.Weather_Settings_TemperatureWind" hash-for-method="tempWindDefault">tempWindDefault</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="practice.Weather_Settings_Temperature" hash-for-method="temperatureList(new york)">temperatureList(new york)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -161,9 +152,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">practice.TV_Schedule_tomorrow</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="tomorrowLink">
+                  </a> <!-- tomorrowLink -->
+                  <span class="method-name">tomorrowLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">practice.Weather_Settings_Temperature</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -173,17 +179,10 @@
                   </a> <!-- temperatureList(new york) -->
                   <span class="method-name">temperatureList</span>
                   <span class="parameters">(new york)</span>
-                  <div class="stack-trace">junit.framework.AssertionFailedError: Celsius temperature is not correctly calculated to Fahrenheit expected:&lt;45.0&gt; but was:&lt;44.0&gt;
-	at junit.framework.Assert.fail(Assert.java:47)
-	at junit.framework.Assert.failNotEquals(Assert.java:282)
-	at junit.framework.Assert.assertEquals(Assert.java:64)
-	at practice.Weather_Settings_Temperature.temperatureList(Weather_Settings_Temperature.java:77)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -196,21 +195,6 @@
                   </a> <!-- windSpeedList(new york) -->
                   <span class="method-name">windSpeedList</span>
                   <span class="parameters">(new york)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">practice.Weather_Settings_TemperatureWind</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="tempWindDefault">
-                  </a> <!-- tempWindDefault -->
-                  <span class="method-name">tempWindDefault</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -265,14 +249,15 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">practice.TV_Schedule_tomorrow</span>
+              <span class="class-name">practice.TV_Schedule_regionAnotherDay</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tomorrowLink">
-                  </a> <!-- tomorrowLink -->
-                  <span class="method-name">tomorrowLink</span>
+                  <a name="regionsNavigation(2, 4)">
+                  </a> <!-- regionsNavigation(2, 4) -->
+                  <span class="method-name">regionsNavigation</span>
+                  <span class="parameters">(2, 4)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -280,15 +265,14 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">practice.TV_Schedule_regionAnotherDay</span>
+              <span class="class-name">practice.Weather_Settings_TemperatureWind</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="regionsNavigation(5, 3)">
-                  </a> <!-- regionsNavigation(5, 3) -->
-                  <span class="method-name">regionsNavigation</span>
-                  <span class="parameters">(5, 3)</span>
+                  <a name="tempWindDefault">
+                  </a> <!-- tempWindDefault -->
+                  <span class="method-name">tempWindDefault</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -307,6 +291,15 @@
     &lt;listener class-name=&quot;practice.Listeners&quot;/&gt;
     &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Weather_Settings_Language&quot;&gt;
+    &lt;parameter name=&quot;langName3&quot; value=&quot;G*idhlig&quot;/&gt;
+    &lt;parameter name=&quot;langName4&quot; value=&quot;Cymraeg&quot;/&gt;
+    &lt;parameter name=&quot;langName1&quot; value=&quot;English&quot;/&gt;
+    &lt;parameter name=&quot;langName2&quot; value=&quot;Gaeilge&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;practice.Weather_Settings_Language&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Weather_Settings_Language --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;HomePage_TopMenu_NewWindows&quot;&gt;
     &lt;parameter name=&quot;tabName8&quot; value=&quot;Home - BBC Future&quot;/&gt;
     &lt;parameter name=&quot;tabName9&quot; value=&quot;BBC - Travel - Home&quot;/&gt;
@@ -325,12 +318,18 @@
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- HomePage_TopMenu_NewWindows --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TV_Schedule_regionAnotherDay&quot;&gt;
-    &lt;parameter name=&quot;indexRegion&quot; value=&quot;5&quot;/&gt;
-    &lt;parameter name=&quot;indexDay&quot; value=&quot;3&quot;/&gt;
+    &lt;parameter name=&quot;indexRegion&quot; value=&quot;2&quot;/&gt;
+    &lt;parameter name=&quot;indexDay&quot; value=&quot;4&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;practice.TV_Schedule_regionAnotherDay&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TV_Schedule_regionAnotherDay --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Weather_Settings_Wind&quot;&gt;
+    &lt;parameter name=&quot;cityName&quot; value=&quot;new york&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;practice.Weather_Settings_Wind&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Weather_Settings_Wind --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TV_Schedule_today&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;practice.TV_Schedule_today&quot;/&gt;
@@ -341,15 +340,6 @@
       &lt;class name=&quot;practice.TV_Schedule_tomorrow&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TV_Schedule_tomorrow --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Weather_Settings_Language&quot;&gt;
-    &lt;parameter name=&quot;langName3&quot; value=&quot;G*idhlig&quot;/&gt;
-    &lt;parameter name=&quot;langName4&quot; value=&quot;Cymraeg&quot;/&gt;
-    &lt;parameter name=&quot;langName1&quot; value=&quot;English&quot;/&gt;
-    &lt;parameter name=&quot;langName2&quot; value=&quot;Gaeilge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;practice.Weather_Settings_Language&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Weather_Settings_Language --&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Weather_Settings_Temperature&quot;&gt;
     &lt;parameter name=&quot;cityName&quot; value=&quot;new york&quot;/&gt;
     &lt;classes&gt;
@@ -361,12 +351,6 @@
       &lt;class name=&quot;practice.Weather_Settings_TemperatureWind&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Weather_Settings_TemperatureWind --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Weather_Settings_Wind&quot;&gt;
-    &lt;parameter name=&quot;cityName&quot; value=&quot;new york&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;practice.Weather_Settings_Wind&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Weather_Settings_Wind --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -378,10 +362,16 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
+                <span class="test-name">Weather_Settings_Language (1 class)</span>
+              </li>
+              <li>
                 <span class="test-name">HomePage_TopMenu_NewWindows (1 class)</span>
               </li>
               <li>
                 <span class="test-name">TV_Schedule_regionAnotherDay (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Weather_Settings_Wind (1 class)</span>
               </li>
               <li>
                 <span class="test-name">TV_Schedule_today (1 class)</span>
@@ -390,16 +380,10 @@
                 <span class="test-name">TV_Schedule_tomorrow (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Weather_Settings_Language (1 class)</span>
-              </li>
-              <li>
                 <span class="test-name">Weather_Settings_Temperature (1 class)</span>
               </li>
               <li>
                 <span class="test-name">Weather_Settings_TemperatureWind (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Weather_Settings_Wind (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -429,40 +413,40 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'mainMenuTabs')
 data.setCell(0, 2, 'practice.HomePage_TopMenu_NewWindows')
-data.setCell(0, 3, 43493);
+data.setCell(0, 3, 147038);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'languageList')
 data.setCell(1, 2, 'practice.Weather_Settings_Language')
-data.setCell(1, 3, 13519);
+data.setCell(1, 3, 31159);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'windSpeedList')
 data.setCell(2, 2, 'practice.Weather_Settings_Wind')
-data.setCell(2, 3, 7280);
+data.setCell(2, 3, 11601);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'regionsNavigation')
-data.setCell(3, 2, 'practice.TV_Schedule_regionAnotherDay')
-data.setCell(3, 3, 6228);
+data.setCell(3, 1, 'temperatureList')
+data.setCell(3, 2, 'practice.Weather_Settings_Temperature')
+data.setCell(3, 3, 11443);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'temperatureList')
-data.setCell(4, 2, 'practice.Weather_Settings_Temperature')
-data.setCell(4, 3, 6053);
+data.setCell(4, 1, 'regionsNavigation')
+data.setCell(4, 2, 'practice.TV_Schedule_regionAnotherDay')
+data.setCell(4, 3, 9997);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'tomorrowLink')
 data.setCell(5, 2, 'practice.TV_Schedule_tomorrow')
-data.setCell(5, 3, 3025);
+data.setCell(5, 3, 4081);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'tempWindDefault')
 data.setCell(6, 2, 'practice.Weather_Settings_TemperatureWind')
-data.setCell(6, 3, 142);
+data.setCell(6, 3, 482);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'todaySchedule')
 data.setCell(7, 2, 'practice.TV_Schedule_today')
-data.setCell(7, 3, 61);
+data.setCell(7, 3, 101);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -488,157 +472,155 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">practice.HomePage_TopMenu_NewWindows</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">practice.Weather_Settings_Language</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">nameBefore(public void practice.HomePage_TopMenu_NewWindows.mainMenuTabs(java.lang.String,java.lang.String,java...)</span>
-                <span class="method-start">9519 ms</span>
+                <span class="method-name">nameBefore(public void practice.Weather_Settings_Language.languageList(java.lang.String,java.lang.String,java.l...)</span>
+                <span class="method-start">16829 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">mainMenuTabs(BBC Sounds - Music. Radio. Podcasts, BBC - Homepage, BBC Weather, BBC WORLD NEWS North America - Sch...)</span>
-                <span class="method-start">9535 ms</span>
+                <span class="method-name">languageList(English, Gaeilge, G*idhlig, Cymraeg)</span>
+                <span class="method-start">16858 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">53031 ms</span>
+                <span class="method-start">48027 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">practice.HomePage_TopMenu_NewWindows</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">49261 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">nameBefore(public void practice.HomePage_TopMenu_NewWindows.mainMenuTabs(java.lang.String,java.lang.String,java...)</span>
+                <span class="method-start">67495 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">mainMenuTabs(BBC Sounds - Music. Radio. Podcasts, BBC - Homepage, BBC Weather, BBC WORLD NEWS North America - Sch...)</span>
+                <span class="method-start">67530 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">214581 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">practice.TV_Schedule_regionAnotherDay</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">54503 ms</span>
+                <span class="method-start">217328 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">nameBefore(public void practice.TV_Schedule_regionAnotherDay.regionsNavigation(int,int) throws java.io.IOExcept...)</span>
-                <span class="method-start">59590 ms</span>
+                <span class="method-start">224378 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">regionsNavigation(5, 3)</span>
-                <span class="method-start">59590 ms</span>
+                <span class="method-name">regionsNavigation(2, 4)</span>
+                <span class="method-start">224379 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">65820 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">practice.TV_Schedule_today</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">66131 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">nameBefore(public void practice.TV_Schedule_today.todaySchedule() throws java.io.IOException,java.lang.Interrup...)</span>
-                <span class="method-start">70938 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">todaySchedule</span>
-                <span class="method-start">70948 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">71010 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">practice.TV_Schedule_tomorrow</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">71263 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">nameBefore(public void practice.TV_Schedule_tomorrow.tomorrowLink() throws java.lang.InterruptedException,java....)</span>
-                <span class="method-start">75648 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tomorrowLink</span>
-                <span class="method-start">75649 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">78675 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">practice.Weather_Settings_Language</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">78887 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">nameBefore(public void practice.Weather_Settings_Language.languageList(java.lang.String,java.lang.String,java.l...)</span>
-                <span class="method-start">85666 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">languageList(English, Gaeilge, G*idhlig, Cymraeg)</span>
-                <span class="method-start">85667 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">99188 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">practice.Weather_Settings_Temperature</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">101524 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">nameBefore(public void practice.Weather_Settings_Temperature.temperatureList(java.lang.String) throws java.io.I...)</span>
-                <span class="method-start">108603 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">temperatureList(new york)</span>
-                <span class="method-start">108604 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">115141 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">practice.Weather_Settings_TemperatureWind</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">117287 ms</span>
-              </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">nameBefore(public void practice.Weather_Settings_TemperatureWind.tempWindDefault() throws java.io.IOException,j...)</span>
-                <span class="method-start">124340 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tempWindDefault</span>
-                <span class="method-start">124341 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">124484 ms</span>
+                <span class="method-start">234378 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">practice.Weather_Settings_Wind</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">126866 ms</span>
+                <span class="method-start">235928 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">nameBefore(public void practice.Weather_Settings_Wind.windSpeedList(java.lang.String) throws java.io.IOExceptio...)</span>
-                <span class="method-start">132791 ms</span>
+                <span class="method-start">246530 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">windSpeedList(new york)</span>
-                <span class="method-start">132795 ms</span>
+                <span class="method-start">246535 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">140076 ms</span>
+                <span class="method-start">258148 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">practice.TV_Schedule_today</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">260732 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">nameBefore(public void practice.TV_Schedule_today.todaySchedule() throws java.io.IOException,java.lang.Interrup...)</span>
+                <span class="method-start">266266 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">todaySchedule</span>
+                <span class="method-start">266267 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">266373 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">practice.TV_Schedule_tomorrow</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">267304 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">nameBefore(public void practice.TV_Schedule_tomorrow.tomorrowLink() throws java.lang.InterruptedException,java....)</span>
+                <span class="method-start">273423 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tomorrowLink</span>
+                <span class="method-start">273425 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">277507 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">practice.Weather_Settings_Temperature</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">278562 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">nameBefore(public void practice.Weather_Settings_Temperature.temperatureList(java.lang.String) throws java.io.I...)</span>
+                <span class="method-start">290121 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">temperatureList(new york)</span>
+                <span class="method-start">290139 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">301584 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">practice.Weather_Settings_TemperatureWind</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">303095 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-method before">
+                <span class="method-name">nameBefore(public void practice.Weather_Settings_TemperatureWind.tempWindDefault() throws java.io.IOException,j...)</span>
+                <span class="method-start">314293 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">tempWindDefault</span>
+                <span class="method-start">314293 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">314776 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

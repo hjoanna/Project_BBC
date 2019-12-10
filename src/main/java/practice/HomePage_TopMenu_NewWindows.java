@@ -89,6 +89,7 @@ public class HomePage_TopMenu_NewWindows extends Base{
 		}
 		// 'More' click
 		hp.getTopMenuMore().click();
+		
 		// open links that are visible only after 'More' click
 		int siblings = hp.getTopMenuVisibleSiblings().size();
 		a.contextClick(hp.getTopMenuFirstVisible()).perform();
@@ -97,9 +98,8 @@ public class HomePage_TopMenu_NewWindows extends Base{
 			a.contextClick(hp.getTopMenuVisibleSiblings().get(i)).perform();
 			Base.newTab(robot);
 		}
-
 	
-		// go through all open tabs, take the titles and count
+		// go through all new open tabs, take the titles and count
 		Set<String> wh = driver.getWindowHandles();
 		Iterator<String> it = wh.iterator();
 		int actCount = 0;

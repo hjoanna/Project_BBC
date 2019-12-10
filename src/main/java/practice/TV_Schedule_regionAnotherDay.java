@@ -80,16 +80,17 @@ public class TV_Schedule_regionAnotherDay extends Base {
 		tv.getOtherRegionsLink().click();
 		
 		//Step 2: Click a region and check if you are redirected to the region schedule eg. for Africa you should be redirected to 'Africa Schedule' page 
+		String regionName = regions.get(indexRegion-1).getText();	
+		Assert.assertEquals("The region you have chosen is already selected so the test can't continue", "a", regions.get(indexRegion-1).findElement(By.className("box-link")).getTagName());		
 		regions.get(indexRegion-1).click();
-		Thread.sleep(2000);
-		Assert.assertEquals(driver.findElement(By.xpath("//*[@id='outlets'] / ul / li[" + indexRegion + "] / span")).getText()
-					+ " Schedule", tv.getRegionScheduleTitle().getText());
+		Assert.assertEquals(regionName + " Schedule", tv.getRegionScheduleTitle().getText());
 		log.info("Successfully open the link for: " + tv.getRegionScheduleTitle().getText());
 		
 		//Step 3: Click on another forward day schedule for the region and then navigate back to 'TODAY' schedule - check if navigation back is working correct 
+		Thread.sleep(1000);
 		driver.findElement(By.xpath("//*[contains(@class, 'page--current')]/following-sibling::li[" + indexDay + "]")).click();
 		driver.navigate().back();
-		Assert.assertEquals("TODAY", tv.getTodayName().getText());
+		Assert.assertEquals("TODAY", driver.findElement(By.cssSelector("[class*='page--current'] .date-list__item-line1")).getText());
 		log.info("Successfully present schedule for " + indexDay + ". day after today and navigate back to today's schedule");
 	}	
 

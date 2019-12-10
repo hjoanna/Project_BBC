@@ -5,17 +5,18 @@
     <listener class-name="practice.Listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Weather_Settings_Temperature(failed)">
-    <parameter name="cityName" value="new york"/>
+  <test thread-count="5" name="TV_Schedule_regionAnotherDay(failed)">
+    <parameter name="indexRegion" value="2"/>
+    <parameter name="indexDay" value="4"/>
     <classes>
-      <class name="practice.Weather_Settings_Temperature">
+      <class name="practice.TV_Schedule_regionAnotherDay">
         <methods>
-          <include name="temperatureList" invocation-numbers="0"/>
           <include name="initialize"/>
           <include name="nameBefore"/>
+          <include name="regionsNavigation" invocation-numbers="0"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- practice.Weather_Settings_Temperature -->
+      </class> <!-- practice.TV_Schedule_regionAnotherDay -->
     </classes>
-  </test> <!-- Weather_Settings_Temperature(failed) -->
+  </test> <!-- TV_Schedule_regionAnotherDay(failed) -->
 </suite> <!-- Failed suite [Suite] -->

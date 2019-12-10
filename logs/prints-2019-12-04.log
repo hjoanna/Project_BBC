@@ -1,0 +1,7 @@
+13:03:16.887 [main] INFO  resources.Base - Selected by default language is English
+13:03:17.477 [main] INFO  resources.Base - All language names are the same as expected
+13:04:08.087 [main] INFO  resources.Base - Test name: languageList
+13:04:08.167 [main] INFO  resources.Base - Selected by default language is English
+13:04:08.576 [main] INFO  resources.Base - All language names are the same as expected
+13:04:51.699 [main] INFO  resources.Base - Test name: languageList
+13:04:51.813 [main] INFO  resources.Base - Selected by default language is English

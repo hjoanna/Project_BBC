@@ -1,0 +1,7 @@
+23:35:20.255 [main] INFO  resources.Base - Test name: tomorrowLink
+23:35:28.094 [main] INFO  resources.Base - Test name: languageList
+23:35:28.169 [main] INFO  resources.Base - Selected by default language is English
+23:46:02.358 [main] INFO  resources.Base - Test name: tomorrowLink
+23:46:04.254 [main] INFO  resources.Base - Section which is now as 'TODAY' after 'Tomorrow' was clicked - has next day date
+23:46:11.099 [main] INFO  resources.Base - Test name: languageList
+23:46:11.167 [main] INFO  resources.Base - Selected by default language is English

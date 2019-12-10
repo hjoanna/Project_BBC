@@ -55,6 +55,7 @@ public class TV_Schedule_today extends Base {
 		// Step 2: Go to 'TODAY' section and check if the date presented is the same as current date
 		String actDate = tv.getDateName().getText();
 		Date date = new Date();
+		System.out.println(date);
 		String dateTable[] = date.toString().split(" ");
 		if (dateTable[2].startsWith("0")) {
 			dateTable[2] = String.valueOf(dateTable[2].charAt(1));
